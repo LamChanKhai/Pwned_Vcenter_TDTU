@@ -51,6 +51,9 @@ Trước tiên, kẻ tấn công cần đăng ký một "Agent" và một ID gi�
     "localObfuscationMapPath": "a9"
 }
 ```
+<p align="left">
+  <img src="./image.png" width="700">
+</p>
 
 ### Bước 2: Gửi Payload (Manifest chứa VTL)
 Sau đó chúng ta gửi một tệp XML Manifest chứa mã Velocity Template (VTL) để ra lệnh cho hệ thống ghi đè file log.
@@ -78,3 +81,13 @@ $appender.setFile(...): Trỏ đích đến của log vào file shell.jsp trong 
 $logger.warn(...): Ghi dòng mã JSP <% out.println(...) %> vào file đó. Đây là mấu chốt của việc tạo Webshell.
 
 Lưu ý: Nội dung bên trong $logger.warn(...) cần phải được Unicode encode để bypass bộ lọc.
+<p align="left">
+  <img src="./image2.png" width="700">
+</p>
+
+## Demonstration
+
+<video controls width="700">
+  <source src="./0113.mp4" type="video/mp4">
+  Trình duyệt của bạn không hỗ trợ thẻ video.
+</video>
